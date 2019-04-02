@@ -4,10 +4,14 @@ $(document).ready(function() {
 	("button").addClass("animated bounce");
   }); 
  document.addEventListener('DOMContentLoaded',function(){
-document.getElementById('favorite').onclick=function(){};
-document.getElementById('favorite1').onclick=function(){};
-document.getElementsByClassName('favorite')[0].textContent="Lackers";
-document.getElementsByClassName('favorite1')[0].textContent="Leborn James";
+document.getElementById('favorite').onclick=function(){
+	document.getElementsByClassName('message')[0].textContent="Lackers";
+};
+document.getElementById('favorite1').onclick=function(){
+	document.getElementsByClassName('message')[0].textContent="Leborn James";
+};
+
+
      };
 </script>
 <style>
