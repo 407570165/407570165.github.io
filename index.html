@@ -5,8 +5,23 @@ $(document).ready(function() {
   }); 
  document.addEventListener('DOMContentLoaded',function(){
 document.getElementById('getMessage').onclick=function(){};
-document.getElementsByClassName('message')[0].textContent="Here is the message";
- });
+req=new XMLHttpRequest();
+      req.open("GET",'/json/team.json',true);
+      req.send();
+      req.onload=function(){
+        json=JSON.parse(req.responseText);
+        var html = "";
+        json.forEach(function(val) {
+          html += "<div class = 'team'>";
+          
+          html += "<img src = '" + https://tse2.mm.bing.net/th?id=OIP.bD2-cUZX5NkRTziVBHbKogHaEo&pid=15.1&P=0&w=249&h=156 + "' " + "alt='" + val.altText + "'>";
+          
+      
+          html += "</div><br>";
+        });
+        document.getElementsByClassName('message')[0].innerHTML=html;
+      };
+     };
 </script>
 <style>
 	background-color: pink;
@@ -79,7 +94,7 @@ font-size: 120px;
 </p>
 <p>
   <button id="favorite">
-    Get Message
+    My favorite player
   </button>
 </p>
 <p class="red-text">Number 1:Los Angeless LACKERS</p>
