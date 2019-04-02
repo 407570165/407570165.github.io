@@ -5,22 +5,7 @@ $(document).ready(function() {
   }); 
  document.addEventListener('DOMContentLoaded',function(){
 document.getElementById('getMessage').onclick=function(){};
-req=new XMLHttpRequest();
-      req.open("GET",'/json/team.json',true);
-      req.send();
-      req.onload=function(){
-        json=JSON.parse(req.responseText);
-        var html = "";
-        json.forEach(function(val) {
-          html += "<div class = 'team'>";
-          
-          html += "<img src = '" + https://tse2.mm.bing.net/th?id=OIP.bD2-cUZX5NkRTziVBHbKogHaEo&pid=15.1&P=0&w=249&h=156 + "' " + "alt='" + val.altText + "'>";
-          
-      
-          html += "</div><br>";
-        });
-        document.getElementsByClassName('message')[0].innerHTML=html;
-      };
+document.getElementsByClassName('message')[0].textContent="Here is the message";
      };
 </script>
 <style>
@@ -96,6 +81,11 @@ font-size: 120px;
   <button id="favorite">
     My favorite player
   </button>
+</p>
+<p>
+	<button id ="favorite1">
+	My favotite team	
+	</button>
 </p>
 <p class="red-text">Number 1:Los Angeless LACKERS</p>
 <img style="width: 800px" src ="http://1.bp.blogspot.com/-dDad7yjdAy8/UOqyIu44QbI/AAAAAAAAcuo/CZSidB2_zrw/s1600/La+Lakers+Basketball+Club+Logo+Wallpaper+2013+05.jpg" alt="a lakers picture">
