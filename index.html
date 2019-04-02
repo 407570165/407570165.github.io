@@ -1,8 +1,12 @@
 <html>
 <script>
 $(document).ready(function() {
-$("button").addClass("animated bounce");
+	("button").addClass("animated bounce");
   }); 
+ document.addEventListener('DOMContentLoaded',function(){
+document.getElementById('getMessage').onclick=function(){};
+document.getElementsByClassName('message')[0].textContent="Here is the message";
+ });
 </script>
 <style>
 	background-color: pink;
@@ -39,6 +43,30 @@ font-size: 120px;
 	align-self: center;
 	font-size: 65px;
 }
+  body {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+  }
+  h10 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 20px 5px;
+  }
+  button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: #0F5897;
+    border: 1px solid #0F5897;
+  }
 
 </style>
 <body>
@@ -46,8 +74,14 @@ font-size: 120px;
 <div>
 	 <div class="col-xs-6">
 <h1 align="center">My favorite NBA team</hr>
-	<div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#Let's see</button>
+	<p class="message box">
+  The message will go here
+</p>
+<p>
+  <button id="favorite">
+    Get Message
+  </button>
+</p>
 <p class="red-text">Number 1:Los Angeless LACKERS</p>
 <img style="width: 800px" src ="http://1.bp.blogspot.com/-dDad7yjdAy8/UOqyIu44QbI/AAAAAAAAcuo/CZSidB2_zrw/s1600/La+Lakers+Basketball+Club+Logo+Wallpaper+2013+05.jpg" alt="a lakers picture">
 <h2 style="font-size:  70px">famous player</h2>
