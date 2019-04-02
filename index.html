@@ -1,18 +1,15 @@
 <html>
 <script>
-$(document).ready(function() {
-	("button").addClass("animated bounce");
-  }); 
- document.addEventListener('DOMContentLoaded',function(){
-document.getElementById('favorite').onclick=function(){
-	document.getElementsByClassName('message')[0].textContent="Lackers";
-};
-document.getElementById('favorite1').onclick=function(){
-	document.getElementsByClassName('message')[0].textContent="Leborn James";
-};
-
-
-     };
+  document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('123').onclick=function(){
+      // Add your code below this line
+      document.getElementsByClassName('message')[0].textContent="Lackers";
+      document.getElementById('getMessage').onclick=function(){
+         document.getElementsByClassName('message')[0].textContent="Leborn James";
+      }
+      // Add your code above this line
+    }
+  });
 </script>
 <style>
 	background-color: pink;
@@ -80,18 +77,18 @@ font-size: 120px;
 <div>
 	 <div class="col-xs-6">
 <h1 align="center">My favorite NBA team</hr>
-	<p class="message box">
+<p class="message box">
   The message will go here
 </p>
 <p>
-  <button id="favorite">
+  <button id="getMessage">
     My favorite player
   </button>
 </p>
 <p>
-	<button id ="favorite1">
-	My favotite team	
-	</button>
+  <button id="123">
+    My favotite team
+  </button>
 </p>
 <p class="red-text">Number 1:Los Angeless LACKERS</p>
 <img style="width: 800px" src ="http://1.bp.blogspot.com/-dDad7yjdAy8/UOqyIu44QbI/AAAAAAAAcuo/CZSidB2_zrw/s1600/La+Lakers+Basketball+Club+Logo+Wallpaper+2013+05.jpg" alt="a lakers picture">
